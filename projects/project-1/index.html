@@ -13,8 +13,7 @@ layout: default
                 <i class="fa fa-bookmark fa-fw"></i> Overview
             </div><!-- /.panel-heading -->
             <div class="panel-body">
-                <h1>Demo Project</h1>
-                Test text
+                {% capture test %}{% include project-1/readme.md %}{% endcapture %}{{ test | markdownify }}
             </div><!-- /.panel-body -->
         </div><!-- /.panel -->
     </div><!-- /.col-lg-8 -->
