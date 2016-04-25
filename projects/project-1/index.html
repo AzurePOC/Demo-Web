@@ -115,7 +115,7 @@ layout: default
                 <i class="fa fa-laptop fa-fw"></i> Technical Requirements
             </div><!-- /.panel-heading -->
             <div class="panel-body">
-                Test text
+                {% capture test %}{% include project-1/technical-requirements.md %}{% endcapture %}{{ test | markdownify }}
             </div><!-- /.panel-body -->
         </div><!-- /.panel -->
     </div><!-- /.col-lg-4 -->
@@ -125,7 +125,7 @@ layout: default
                 <i class="fa fa-building fa-fw"></i> Business Requirements
             </div><!-- /.panel-heading -->
             <div class="panel-body">
-                Test text
+                {% capture test %}{% include project-1/business-requirements.md %}{% endcapture %}{{ test | markdownify }}
             </div><!-- /.panel-body -->
         </div><!-- /.panel -->
     </div><!-- /.col-lg-4 -->
@@ -135,7 +135,7 @@ layout: default
                 <i class="fa fa-gears fa-fw"></i> Deploy Solution
             </div><!-- /.panel-heading -->
             <div class="panel-body">
-                Test text
+                {% capture test %}{% include project-1/solution.md %}{% endcapture %}{{ test | markdownify }}
             </div><!-- /.panel-body -->
         </div><!-- /.panel -->
     </div><!-- /.col-lg-4 -->
